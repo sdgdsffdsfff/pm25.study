@@ -6,7 +6,6 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.apache.http.HttpEntity;
-import org.apache.http.HttpException;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.ResponseHandler;
@@ -84,17 +83,4 @@ public class GetPM25Data2LogFile {
 			}
 		}
 	}
-
-	/**
-	 * @param args
-	 * @throws ClientProtocolException
-	 * @throws IOException
-	 * @throws HttpException
-	 */
-	public static void main(String[] args) throws ClientProtocolException,
-			IOException {
-		GetPM25Data2LogFile data2LogFile = new GetPM25Data2LogFile();
-		data2LogFile.importData();
-	}
-
 }

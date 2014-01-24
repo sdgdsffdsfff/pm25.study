@@ -38,7 +38,11 @@
 				<artifactId>httpclient</artifactId>
 				<version>4.3.2</version>
 			</dependency>
-
+			<dependency>
+				<groupId>org.apache.servicemix.bundles</groupId>
+				<artifactId>org.apache.servicemix.bundles.quartz</artifactId>
+				<version>1.8.6_1</version>
+			</dependency>
 
 		</dependencies>
 	</dependencyManagement>
