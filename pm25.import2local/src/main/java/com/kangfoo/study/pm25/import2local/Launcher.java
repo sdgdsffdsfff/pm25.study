@@ -17,7 +17,6 @@ public class Launcher {
 	private final static Logger logger = LoggerFactory.getLogger("Launcher");
 
 	public static void main(String[] args) throws Exception {
-		// TODO Auto-generated method stub
 
 		Scheduler scheduler = QuartzScheduleMgr.getInstanceScheduler();
 
@@ -31,7 +30,7 @@ public class Launcher {
 		JobInfoBean jb = new JobInfoBean();
 		jb.setJobClass(com.kangfoo.study.pm25.import2local.ImportDataJob.class
 				.getName());
-		jb.setCronExpression("0 42 */1 * * ?");
+		jb.setCronExpression("0 22 */1 * * ?");
 
 		if (jobDetail == null) {
 			createJob(jb, jobName, groupId);

@@ -63,7 +63,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.kangfoo.study.pm25.import2local.GetPM25Data2LogFile</mainClass>
+							<mainClass>com.kangfoo.study.pm25.import2local.Launcher</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>

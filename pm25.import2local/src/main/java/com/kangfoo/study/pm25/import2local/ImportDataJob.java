@@ -13,12 +13,12 @@ public class ImportDataJob implements Job {
 	@Override
 	public void execute(JobExecutionContext context)
 			throws JobExecutionException {
-		logger.info("轮询ImportDataJob开始....");
+		logger.debug("轮询ImportDataJob开始....");
 		
 		GetPM25Data2LogFile data2LogFile = new GetPM25Data2LogFile();
 		data2LogFile.importData();
 		
-		logger.info("轮询ImportDataJob结束");
+		logger.debug("轮询ImportDataJob结束");
 	}
 
 }
