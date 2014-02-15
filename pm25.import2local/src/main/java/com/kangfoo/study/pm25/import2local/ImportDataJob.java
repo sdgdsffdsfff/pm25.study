@@ -15,8 +15,13 @@ public class ImportDataJob implements Job {
 			throws JobExecutionException {
 		logger.debug("轮询ImportDataJob开始....");
 		
-		GetPM25Data2LogFile data2LogFile = new GetPM25Data2LogFile();
-		data2LogFile.importData();
+//		GetPM25Data2LogFile data2LogFile = new GetPM25Data2LogFile();
+//		data2LogFile.importData();
+		AllCityPM25Data2LogFile allCity = new AllCityPM25Data2LogFile();
+		allCity.importData();
+		
+		APIRankingData2LogFile apiRanking = new APIRankingData2LogFile();
+		apiRanking.importData();
 		
 		logger.debug("轮询ImportDataJob结束");
 	}

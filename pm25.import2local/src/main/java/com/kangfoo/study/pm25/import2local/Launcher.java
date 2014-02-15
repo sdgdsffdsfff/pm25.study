@@ -30,7 +30,7 @@ public class Launcher {
 		JobInfoBean jb = new JobInfoBean();
 		jb.setJobClass(com.kangfoo.study.pm25.import2local.ImportDataJob.class
 				.getName());
-		jb.setCronExpression("0 22 */1 * * ?");
+		jb.setCronExpression("0 48 */1 * * ?");
 
 		if (jobDetail == null) {
 			createJob(jb, jobName, groupId);
