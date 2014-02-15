@@ -21,7 +21,7 @@ import org.slf4j.LoggerFactory;
 public class GetPM25Data2LogFile {
 
 	private final static Logger logger = LoggerFactory
-			.getLogger("GetPM25Data2LogFile");
+			.getLogger(GetPM25Data2LogFile.class);
 	
 	private final static String pm25Url = "http://www.pm25.in/api/querys/pm2_5.json?token=%s&city=%s";
 	private final static String pm10Url = "http://www.pm25.in/api/querys/pm10.json?token=%s&city=%s";
@@ -111,5 +111,10 @@ public class GetPM25Data2LogFile {
 				responseHandler);
 
 		logger.info(city + "\t" + key + "\t" + responseBody);
+	}
+	
+	public static void main(String[] args) {
+		GetPM25Data2LogFile data2LogFile = new GetPM25Data2LogFile();
+		data2LogFile.importData();
 	}
 }
