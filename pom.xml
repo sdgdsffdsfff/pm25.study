@@ -63,5 +63,6 @@
 
 	<modules>
 		<module>pm25.import2local</module>
-	</modules>
+        <module>weather.import2local</module>
+    </modules>
 </project>

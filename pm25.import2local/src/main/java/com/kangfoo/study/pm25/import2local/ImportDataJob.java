@@ -1,5 +1,6 @@
 package com.kangfoo.study.pm25.import2local;
 
+import com.kangfoo.study.pm25.import2local.impl.GetWeatherImpl;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
@@ -23,7 +24,10 @@ public class ImportDataJob implements Job {
 		
 		APIRankingData2LogFile apiRanking = new APIRankingData2LogFile();
 		apiRanking.importData();
-		
+
+        GetWeatherImpl getWeather = new GetWeatherImpl();
+        getWeather.importData();
+
 		logger.debug("轮询ImportDataJob结束");
 	}
 
