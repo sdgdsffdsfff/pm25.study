@@ -8,6 +8,7 @@
 bin/
 tmp/
 *.tmp
+*.idea/*
 *.bak
 *.swp
 *~.nib
@@ -214,3 +215,29 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+.idea/.name
+
+.idea/workspace.xml
+
+.idea/vcs.xml
+
+.idea/uiDesigner.xml
+
+.idea/scopes/scope_settings.xml
+
+.idea/modules.xml
+
+.idea/misc.xml
+
+.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml
+
+.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml
+
+.idea/libraries/Maven__xml_resolver_xml_resolver_1_2.xml
+
+.idea/libraries/Maven__wsdl4j_wsdl4j_1_6_3.xml
+
+*.iml
+
+.idea/libraries/Maven__org_springframework_spring_tx_3_2_0_RELEASE.xml
